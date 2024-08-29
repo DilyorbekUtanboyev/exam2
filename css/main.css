@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #74C69D;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+
+}
+
+nav .container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    font-size: 20px;
+}
+nav .container ul li{
+    transition: all .3s ease;
+
+    position: relative;
+    cursor: pointer;
+}
+nav .container ul li:hover::after{
+    width: 100%;
+}
+nav .container ul li:hover{
+    color: blue;
+}
+nav .container ul li::after{
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 0px;
+    height: 3px;
+    width: 0.001px;
+    font-weight: 700;
+    background-color: blue;
+    transition: all .3s ease;
+
+}
+
+.hero {
+    background-color: #74C69D;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.hero .container .info1 {
+    color: white;
+    width: 435px;
+}
+
+.hero .container .info1 h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.hero .container .info1 h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Crimson Text", serif;
+}
+
+.hero .container .info1 p {
+    font-size: 16px;
+    line-height: 18.75px;
+    margin-bottom: 20px;
+}
+
+.hero .container .info1 button {
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.hero .container .info1 button:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
+
+.texting .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.texting .container .info2 {
+    width: 435px;
+}
+
+.texting .container .info2 h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Crimson Text", serif;
+}
+
+.texting .container .info2 p {
+    font-size: 16px;
+    line-height: 18.75px;
+    margin-bottom: 20px;
+}
+
+.texting .container .info2 button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.texting .container .info2 button:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+.working .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.working .container .info3 {
+    width: 435px;
+}
+
+.working .container .info3 h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Crimson Text", serif;
+}
+
+.working .container .info3 p {
+    font-size: 16px;
+    line-height: 18.75px;
+    margin-bottom: 20px;
+}
+
+.working .container .info3 button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.working .container .info3 button:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
+
+.talents .container {
+    padding: 20px 0px;
+}
+
+.talents .team {
+    text-align: center;
+    line-height: 35px;
+    padding: 20px;
+    margin-bottom: 100px;
+    /* width: 404px; */
+}
+
+.talents .team h4 {
+    color: #74C69D;
+    font-size: 16px;
+}
+
+.talents .team h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Crimson Text", serif;
+}
+
+.talents .team p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+}
+
+.talents .team button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.talents .team button:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
+
+.people .person {
+    padding: 15px;
+    box-shadow: 3px 3px 10px gray;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.people .person:hover{
+    transform: scale(1.2);
+}
+
+.talents .people {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #74C69D;
+    margin-bottom: 300px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+footer .container .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+footer .container .icons img{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+footer .container .icons img:hover{
+    transform: scale(1.5);
+}
+
+nav .bars {
+    display: none;
+}
+.talents .container .people button{
+    display: none;
+}
+
+@media(max-width:450px) {
+    nav .container {
+        padding: 20px;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+
+    nav .container .bars {
+        display: block;
+        width: 35px;
+        height: 35px;
+    }
+
+    nav .container img {
+        width: 129px;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+    }
+
+    .hero .container img {
+        width: 335px;
+    }
+
+    .hero .container .info1 {
+        width: 335px;
+    }
+
+    .hero .container .info1 h1 {
+        font-size: 28px;
+    }
+
+    .hero .container .info1 h3 {
+        letter-spacing: 5px;
+        margin-top: 20px;
+    }
+
+    .hero .container .info1 button {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+
+    .texting .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .texting .container img {
+        width: 335px;
+        margin-bottom: 20px;
+    }
+
+    .texting .container .info2 {
+        width: 335px;
+    }
+
+    .texting .container .info2 h1 {
+        font-size: 24px;
+    }
+
+    .texting .container .info2 p {
+        color: #212529;
+
+    }
+
+    .texting button {
+        padding: 15px 50px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+
+    .working .container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .working .container img {
+        width: 335px;
+        margin-bottom: 20px;
+    }
+
+    .working .container .info3 {
+        width: 335px;
+    }
+
+    .working .container .info3 h1 {
+        font-size: 24px;
+    }
+
+    .working .container .info3 p {
+        color: #212529;
+
+    }
+
+    .working button {
+        padding: 15px 50px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .talents .container {
+        width: 100%;
+        padding: 0px;
+
+    }
+
+    .talents .container button {
+        display: none;
+    }
+
+    .talents .container .people {
+        flex-direction: column;
+        padding-left: 55px;
+        
+    }
+
+    .talents .container .people .person {
+        width: 285px;
+        text-align: center;
+    }
+
+    .talents .container .people button {
+        display: block;
+        padding: 20px 25px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        width: 250px;
+        margin-left: 15px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .container .icons{
+        gap: 20px;
+    }
+
+}
